@@ -12,7 +12,7 @@ to users, and fetching tasks assigned to a specific user.
 <b>API Endpoints</b>
 
 1. List All Tasks <br>
-   Retrieves all tasks ordered by weightage in descending order and then by creation date.
+   Retrieves all tasks ordered by weightage in descending order and then by creation date.<br>
    GET http://127.0.0.1:8000/tasks/list <br>
    [
    {
@@ -34,7 +34,7 @@ to users, and fetching tasks assigned to a specific user.
    "task_type": "bug",
    "status": "pending",
    "created_by": 1
-   }
+   }<br>
    ]
 
 2. Create a New Task (Admin Only) <br>
@@ -83,7 +83,8 @@ to users, and fetching tasks assigned to a specific user.
    "mobile": "8765432109",
    "created_at": "2025-03-25T07:14:14.017940Z",
    "updated_at": "2025-03-25T07:14:14.017958Z"
-   },
+   }<br>
+   ]
 
 4. Get Tasks Assigned to a User (tasks will be sorted by weightage) <br>
    GET http://127.0.0.1:8000/tasks/user/2 <br>
@@ -116,7 +117,7 @@ to users, and fetching tasks assigned to a specific user.
    "user_ids":[2],
    "weightage":{"2": 5},
    "deadline":{"1":"2025-03-28","2":"2025-04-21"}
-   }
+   }<br>
    Response: <br>
    {
    "message": "Successfully assigned 2 task(s) to 1 user(s)."
@@ -127,19 +128,19 @@ to users, and fetching tasks assigned to a specific user.
 
 1. Extract the ZIP File
 2. Navigate to the extracted folder:
-3. Set Up a Virtual Environment and activate venv:
-   python -m venv venv
+3. Set Up a Virtual Environment and activate venv:<br>
+   python -m venv venv<br>
    venv\Scripts\activate  or source venv/bin/activate
-4. Install Dependencies
+4. Install Dependencies <br>
    pip install -r requirements.txt
-5. If you found error of "No module storages"
+5. If you found error of "No module storages" <br>
    pip install django-storages
 6. Set Up the Database
    python manage.py migrate
-7. Create a Superuser (Optional for Admin Access)
+7. Create a Superuser (Optional for Admin Access)<br>
    python manage.py createsuperuser
-8. Run the Development Server
-   python manage.py runserver
+8. Run the Development Server <br>
+   python manage.py runserver<br>
    The application will be available at:  http://127.0.0.1:8000/
 9. Test the API Endpoints
    Use Postman, cURL, or any REST client to test the API endpoints.
