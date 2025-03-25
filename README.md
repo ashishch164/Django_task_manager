@@ -7,7 +7,7 @@ to users, and fetching tasks assigned to a specific user.
 
 1. Python
 2. Django Rest Framework (DRF)
-3. Sqlite
+3. dbsqlite3
 
 <b>API Endpoints</b>
 
